@@ -1,0 +1,130 @@
+.hero-animated {
+    background-repeat: no-repeat;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+.hero-animated img{
+    width: 100%;
+    height: 850px;
+}
+
+.about-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px 100px;
+    width: auto;
+    height: 200px;
+}
+
+.about-us h2{
+    font-size: 35px;
+    font-family: $primary_font;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.about-us p{
+    font-size: 15px;
+    font-family: $primary_font;
+    font-weight: lighter;
+    margin: 0px 200px;
+}
+
+.about-us {
+    animation-duration: 6s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 6s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+.footer-content{
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@media screen and (max-width:800px){
+
+    .hero-animated img{
+        width: 100%;
+        height: 350px;
+    }
+    
+    .about-us{
+        margin: 5px 60px;
+        height: 350px;
+        display: inline-block;
+    }
+
+    .about-us p{
+        font-size: 14px;
+        font-family: $primary_font;
+        font-weight: lighter;
+        margin: 20px 20px 5px 5px;
+    }
+    
+    .footer-content .footer-main{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        padding: 35px 0px;
+    }
+
+    .footer-content .footer-main .box iframe{
+        width: 300px;
+        height: 200px;
+    }
+}

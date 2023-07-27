@@ -1,0 +1,91 @@
+.topbar{
+    background-color: $primary_color;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.topbar img{
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+}
+
+.topbar p{
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 60px;
+    font-family: $primary_font;
+}
+
+.logo {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $secundary_color;
+}
+
+.logo img{
+    margin-top: 4px;
+    width: 120px;
+    height: 100px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    position: relative;
+}
+.navbar ul li{
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar ul li a {
+    display: block;
+    text-decoration: none;
+    color: $primary_color;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: $primary_font;
+}
+
+.navbar-main{
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-social ul{
+    padding-top: 10px;
+    padding-left: 30px;
+    list-style: none;
+    display: flex;
+}
+
+.navbar-utils ul{
+    padding-top: 10px;
+    padding-right: 30px;
+    list-style: none;
+    display: flex;
+}
+
+.navbar-social a .twitter {
+    margin-top: 2px;
+    padding-left: 6px;
+}
